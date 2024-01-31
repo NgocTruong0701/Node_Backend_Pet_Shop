@@ -1,9 +1,9 @@
 const express = require('express');
+const morgan = require('morgan');
 const app = express();
 
-// init middlewares 
-
-
+// init middlewares
+app.use(morgan("dev")); // middlewares to write the logs when have request (has type: dev / )
 
 // init db
 
